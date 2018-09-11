@@ -32,12 +32,7 @@ Projeto criado para expor novos serviços CRUD's a partir de um cadastro prévio
   
   http://localhost:8080/gerador-servicos/swagger-ui.html
   
-  Acessar interface do Swagger da aplicação de serviços gerados:
-  
-  http://localhost:8081/servicos-gerados/swagger-ui.html
-
-
-Payload para Teste:
+  Payload para Teste:
 
 {
   "descricaoDominio": "Carro",
@@ -73,3 +68,10 @@ Payload para Teste:
     }
   ]
 }
+
+
+  Acessar a aplicação de serviços gerados para verificar se o novo serviço foi criado corretamente:
+  
+  http://localhost:8081/servicos-gerados/swagger-ui.html
+
+
