@@ -1,2 +1,29 @@
 # prj-gerador-servico
 Projeto criado para expor novos serviços CRUD's a partir de um cadastro prévio do domínio
+
+
+# Solução Arquitetural Desenhada
+
+  Após analisar os requisitos solicitados cheguei a conclusão que a melhor solução arquitetural seria uma aplicação que escreveria os arquivos de outra aplicação responsável por expor os serviços CRUD's.
+  Nas duas aplicações usei arquitetura de API Rest com Spring Boot. A aplicação pai ficou responsável por armazenar a arquitura da aplicação filho em seu classpath, desta forma eu garanto que as duas aplicações vão estar sempre juntas. 
+  Para facilitar as evoluções futuras e a escalabilidades destas arquiteturas eu usei o padrão MVC para dividir a codificação destas API's em camadas.
+  Para aumentar a coesão e reduzir o acoplamento eu utilizei recursos de injeção de dependências do framework Spring, para facilitar a injeção de dependencia eu apliquei o pattern facade, com ele ao invez de injetar uma classe contendo toda sua implementação eu crio interfaces isolando apenas as dependências que de fato eu irei injetar em cada camada.
+  
+# Tecnologias Utilizadas
+
+  Controle de Versão: Git;
+  Linguagem de Progração: Java EE - Versão da JDK 1.8.0_181;
+  Gerenciador de Dependências: Maven - Versão 3.5.4;
+  IDE: Eclipse Photon;
+  Banco de Dados: MySQL;
+  Documentação de API: Swagger;
+  Manutenção de scripts DML e DDL: Liquibase;
+  Acesso a dados, Exposição de Serviços, Injeção de Dependências e Agrupador de Dependências: Spring;  
+  
+# Intruções para Execução
+
+  Criar as variáveis de ambiente: JAVA_HOME e MAVEN_HOME
+  Baixar a última versão do Eclipse;
+  Importar o projeto gerador-gerador-servico no eclipse: O mesmo mesmo deve ser importado com um projeto maven
+  Criar o build do projeto no eclipse usando o comando: clean install -DskipTests
+  Criar o run do projeto spring but usando o comanto: spring-boot:run
