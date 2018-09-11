@@ -26,7 +26,7 @@ Projeto criado para expor novos serviços CRUD's a partir de um cadastro prévio
   Baixar a última versão do Eclipse;
   Importar o projeto gerador-gerador-servico no eclipse: O mesmo mesmo deve ser importado com um projeto maven;
   Criar o build do projeto no eclipse usando o comando: clean install;
-  Criar o run do projeto spring but usando o comanto: spring-boot:run;
+  Criar o run do projeto spring boot usando o comanto: spring-boot:run;
   
   Acessar interface do Swagger da aplicação geradora de serviço:  
   
