@@ -6,7 +6,7 @@ Projeto criado para expor novos serviços CRUD's a partir de um cadastro prévio
 
   Após analisar os requisitos solicitados cheguei a conclusão que a melhor solução arquitetural seria desenvolver uma aplicação que escrevesse os arquivos de outra aplicação responsável por expor os serviços CRUD's.
   Nas duas aplicações usei arquitetura de API Rest com Spring Boot. A aplicação pai ficou responsável por armazenar a arquitura da aplicação filho em seu classpath, desta forma eu garanto que as duas aplicações vão estar sempre juntas. 
-  Para facilitar as evoluções futuras e a escalabilidades destas arquiteturas eu usei o padrão MVC para dividir a codificação destas API's em camadas.
+  Para facilitar as evoluções futuras e a escalabilidade desta arquitetura eu usei o padrão MVC para dividir a codificação destas API's em camadas.
   Para aumentar a coesão e reduzir o acoplamento eu utilizei recursos de injeção de dependências do framework Spring, para facilitar a injeção de dependencia eu apliquei o pattern facade, com ele ao invez de injetar uma classe contendo toda sua implementação eu crio interfaces isolando apenas as dependências que de fato eu irei injetar em cada camada.
   
 # Tecnologias Utilizadas
