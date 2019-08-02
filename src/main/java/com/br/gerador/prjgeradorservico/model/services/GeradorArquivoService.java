@@ -7,14 +7,14 @@ import com.br.gerador.prjgeradorservico.enums.ConstantesEnum;
 import com.br.gerador.prjgeradorservico.enums.DiretorioArquivosEnum;
 import com.br.gerador.prjgeradorservico.model.domain.Atributo;
 import com.br.gerador.prjgeradorservico.model.domain.Dominio;
-import com.br.gerador.prjgeradorservico.model.services.fachada.GeradorArquivoServiceFachada;;
+import com.br.gerador.prjgeradorservico.model.services.fachada.IGeradorArquivoServiceFachada;;
 
 /**
  * @author alan.franco
  *
  */
 @Service
-public class GeradorArquivoService extends BaseService implements GeradorArquivoServiceFachada {
+public class GeradorArquivoService extends BaseService implements IGeradorArquivoServiceFachada {
 
 	@Override
 	public void gerarArquivoService(Dominio dominio) {

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.br.gerador.prjgeradorservico.model.domain.Dominio;
-import com.br.gerador.prjgeradorservico.model.services.fachada.GeradorServiceFachada;
+import com.br.gerador.prjgeradorservico.model.services.fachada.IGeradorServiceFachada;
 import com.google.gson.Gson;
 
 /**
@@ -19,7 +19,7 @@ import com.google.gson.Gson;
 public class GeradorController extends BaseController {
 
 	@Autowired
-	private GeradorServiceFachada geradorServiceFachada;
+	private IGeradorServiceFachada geradorServiceFachada;
 
 	@RequestMapping(value = "/gerar-servico", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
 	public String gerarServico(@RequestBody Dominio dominio) {

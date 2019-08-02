@@ -10,18 +10,18 @@ import org.springframework.stereotype.Service;
 
 import com.br.gerador.prjgeradorservico.factory.GeradorArquivosFactory;
 import com.br.gerador.prjgeradorservico.model.domain.Dominio;
-import com.br.gerador.prjgeradorservico.model.repository.DbChangeLogRepositoryFachada;
-import com.br.gerador.prjgeradorservico.model.services.fachada.GeradorServiceFachada;
+import com.br.gerador.prjgeradorservico.model.repository.IDbChangeLogRepositoryFachada;
+import com.br.gerador.prjgeradorservico.model.services.fachada.IGeradorServiceFachada;
 
 /**
  * @author alan.franco
  *
  */
 @Service
-public class GeradorService extends BaseService implements GeradorServiceFachada {
+public class GeradorService extends BaseService implements IGeradorServiceFachada {
 
 	@Autowired
-	private DbChangeLogRepositoryFachada dbChangeLogRepository;
+	private IDbChangeLogRepositoryFachada dbChangeLogRepository;
 
 	private Process childProcess;
 

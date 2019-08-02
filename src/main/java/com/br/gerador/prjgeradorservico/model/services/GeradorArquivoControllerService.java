@@ -5,14 +5,14 @@ import org.springframework.stereotype.Service;
 import com.br.gerador.prjgeradorservico.enums.ConstantesEnum;
 import com.br.gerador.prjgeradorservico.enums.DiretorioArquivosEnum;
 import com.br.gerador.prjgeradorservico.model.domain.Dominio;
-import com.br.gerador.prjgeradorservico.model.services.fachada.GeradorArquivoControllerServiceFachada;
+import com.br.gerador.prjgeradorservico.model.services.fachada.IGeradorArquivoControllerServiceFachada;
 
 /**
  * @author alan.franco
  *
  */
 @Service
-public class GeradorArquivoControllerService extends BaseService implements GeradorArquivoControllerServiceFachada {
+public class GeradorArquivoControllerService extends BaseService implements IGeradorArquivoControllerServiceFachada {
 
 	@Override
 	public void gerarArquivoController(Dominio dominio) {

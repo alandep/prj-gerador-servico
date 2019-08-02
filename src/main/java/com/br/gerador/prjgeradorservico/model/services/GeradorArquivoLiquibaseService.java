@@ -7,8 +7,8 @@ import com.br.gerador.prjgeradorservico.enums.ConstantesEnum;
 import com.br.gerador.prjgeradorservico.enums.DiretorioArquivosEnum;
 import com.br.gerador.prjgeradorservico.model.domain.Atributo;
 import com.br.gerador.prjgeradorservico.model.domain.Dominio;
-import com.br.gerador.prjgeradorservico.model.repository.DbChangeLogRepositoryFachada;
-import com.br.gerador.prjgeradorservico.model.services.fachada.GeradorArquivoLiquibaseServiceFachada;
+import com.br.gerador.prjgeradorservico.model.repository.IDbChangeLogRepositoryFachada;
+import com.br.gerador.prjgeradorservico.model.services.fachada.IGeradorArquivoLiquibaseServiceFachada;
 import com.br.gerador.prjgeradorservico.util.MetodosUteis;
 
 /**
@@ -16,7 +16,7 @@ import com.br.gerador.prjgeradorservico.util.MetodosUteis;
  *
  */
 @Service
-public class GeradorArquivoLiquibaseService extends BaseService implements GeradorArquivoLiquibaseServiceFachada {
+public class GeradorArquivoLiquibaseService extends BaseService implements IGeradorArquivoLiquibaseServiceFachada {
 
 	
 

@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Repository
-public class DbChangeLogRepository implements DbChangeLogRepositoryFachada {
+public class DbChangeLogRepository implements IDbChangeLogRepositoryFachada {
 
 	@PersistenceContext
 	private EntityManager em;
